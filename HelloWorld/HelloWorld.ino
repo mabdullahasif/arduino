@@ -1,20 +1,18 @@
-#include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-void setup()
-{
+void setup() {
   lcd.begin();
   lcd.backlight();
 
-  lcd.setCursor(0, 0);   // First row
+  lcd.setCursor(0, 0); // First row
   lcd.print("Hello,");
 
-  lcd.setCursor(0, 1);   // Second row
+  lcd.setCursor(0, 1); // Second row
   lcd.print("World");
 }
 
-void loop()
-{
-}
+void loop() {}
